@@ -14,7 +14,7 @@ public class Dollar extends Coin
         super();
     }
     
-    public int getTotalValue()
+    public double getTotalValue()
     {
         return this.getQuantity() * value;
     }

@@ -1,6 +1,6 @@
 package src.com.piggyBank;
 
-import java.lang.reflect.Array;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class Main {
@@ -17,9 +17,16 @@ public class Main {
         piggyBank.add(new Dollar());
         piggyBank.add(new Penny(10));
         
+        double totalValue = 0;
+        
         for(Coin c : piggyBank)
         {
             System.out.printf(c.toString() + "\n");
+            totalValue += c.getTotalValue();
         }
+        
+        DecimalFormat fp = new DecimalFormat("$###,###.00");
+    
+        System.out.println("The piggy bank holds " + fp.format(totalValue));
     }
 }

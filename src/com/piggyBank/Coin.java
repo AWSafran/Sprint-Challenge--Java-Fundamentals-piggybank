@@ -18,4 +18,6 @@ public abstract class Coin
     {
         return quantity;
     }
+    
+    public abstract double getTotalValue();
 }
