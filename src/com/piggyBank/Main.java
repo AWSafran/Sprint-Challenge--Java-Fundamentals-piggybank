@@ -4,6 +4,7 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class Main {
+    
 
     public static void main(String[] args) {
     
@@ -21,12 +22,27 @@ public class Main {
         
         for(Coin c : piggyBank)
         {
-            System.out.printf(c.toString() + "\n");
+            System.out.println(c.toString());
             totalValue += c.getTotalValue();
         }
         
         DecimalFormat fp = new DecimalFormat("$###,###.00");
     
         System.out.println("The piggy bank holds " + fp.format(totalValue));
+        
+        piggyBank.get(2).removeCoins(4);
+        
+        totalValue = 0;
+        
+        for(Coin c : piggyBank)
+        {
+            System.out.println(c.toString());
+            totalValue += c.getTotalValue();
+        }
+    
+        System.out.println("The piggy bank holds " + fp.format(totalValue));
+        
+        piggyBank.get(2).removeCoins(2);
+        
     }
 }
