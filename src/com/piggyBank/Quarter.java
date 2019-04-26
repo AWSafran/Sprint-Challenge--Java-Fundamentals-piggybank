@@ -22,6 +22,13 @@ public class Quarter extends Coin
     @Override
     public String toString()
     {
-        return this.getQuantity() + " Quarter";
+        if (this.getQuantity() == 1)
+        {
+            return this.getQuantity() + " Quarter";
+        }
+        else
+        {
+            return this.getQuantity() + " Quarters";
+        }
     }
 }

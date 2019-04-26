@@ -22,6 +22,13 @@ public class Nickel extends Coin
     @Override
     public String toString()
     {
-        return this.getQuantity() + " Nickel";
+        if (this.getQuantity() == 1)
+        {
+           return this.getQuantity() + "Nickel";
+        }
+        else
+        {
+            return this.getQuantity() + " Nickels";
+        }
     }
 }

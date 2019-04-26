@@ -22,6 +22,13 @@ public class Dime extends Coin
     @Override
     public String toString()
     {
-        return this.getQuantity() + " Dime";
+        if (this.getQuantity() == 1)
+        {
+            return this.getQuantity() + " Dime";
+        }
+        else
+        {
+            return this.getQuantity() + " Dimes";
+        }
     }
 }
