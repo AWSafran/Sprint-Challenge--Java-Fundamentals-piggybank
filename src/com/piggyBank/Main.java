@@ -1,8 +1,11 @@
-package com.piggyBank;
+package src.com.piggyBank;
 
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+	
+        Dollar testDollar = new Dollar();
+    
+        System.out.println(testDollar.toString());
     }
 }

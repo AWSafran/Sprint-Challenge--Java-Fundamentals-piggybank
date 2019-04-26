@@ -3,7 +3,6 @@ package src.com.piggyBank;
 public abstract class Coin
 {
     private int quantity;
-    private double value;
     
     public Coin(int quantity)
     {
@@ -13,5 +12,10 @@ public abstract class Coin
     public Coin()
     {
         this.quantity = 1;
+    }
+    
+    public int getQuantity()
+    {
+        return quantity;
     }
 }
