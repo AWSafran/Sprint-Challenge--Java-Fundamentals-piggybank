@@ -14,6 +14,11 @@ public class Dollar extends Coin
         super();
     }
     
+    public int getTotalValue()
+    {
+        return this.getQuantity() * value;
+    }
+    
     @Override
     public String toString()
     {

@@ -14,6 +14,11 @@ public class Dime extends Coin
         super(quantity);
     }
     
+    public double getTotalValue()
+    {
+        return this.getQuantity() * value;
+    }
+    
     @Override
     public String toString()
     {
